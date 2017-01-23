@@ -3,6 +3,7 @@
 	
 	app.controller('StoreController', function(){
 		this.products = gems;
+
 	});
 
 	app.controller('PanelController', function(){
@@ -17,6 +18,7 @@
 		};
 	});
 
+
 	var gems = [
 		{
 			name: 'Dodecahedron',
@@ -27,7 +29,19 @@
 		        "images/gem-01.gif",
 		        "images/gem-03.gif",
 		        "images/gem-04.gif"
-      		]
+      		],
+      		reviews: [
+				{
+					stars: 5,
+					body: "I love this products!",
+					author: "joe@thomas.com"
+				},
+				{
+					stars: 1,
+					body: "This product sucks",
+					author: "tim@hater.com"
+				}
+			]
 		},
 		{
 			name: 'Pentagonal Gem',
