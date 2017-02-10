@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Flatlanders</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="container" ng-controller="StoreController as store">
 	<header>
@@ -20,13 +21,16 @@
 		    	<div class="img-wrap">
 		          <img class="img img-circle img-thumbnail center-block" ng-src="{{product.images[0]}}" />
 		        </div>
-				<!--	
-		        <ul class="img-thumbnails clearfix">
-		          <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
-		            <img ng-src="{{image}}" />
-		          </li>
-		        </ul>
-				-->
+
+		        <div class="margin-img">
+			     	<ul class="img-thumbnails clearfix">
+			          <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+			            <img class="img-circle size-image" ng-src="{{image}}" />
+			          </li>
+			        </ul>   	
+		        </div>
+
+
 		      </div>	
 		    <!--SECTION-->
 			<section class="tab" ng-controller="PanelController as panel">
